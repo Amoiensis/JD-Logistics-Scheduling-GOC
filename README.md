@@ -49,6 +49,8 @@ B榜
 
 40839.07   排名：38
 
+***************************************
+
 ATTENTION
 ---------------------------------------
 Please feel free to contact with me for any questions, thank you!
