@@ -44,4 +44,6 @@ Please feel free to contact with me for any questions, thank you!
 Please don't spread the files without permission!
 
 未经允许，请勿转载！
+
+本项目所有文件仅供学习交流使用！
 ************************************************************************
