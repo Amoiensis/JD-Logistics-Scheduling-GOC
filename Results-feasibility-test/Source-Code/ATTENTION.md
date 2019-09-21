@@ -1,6 +1,6 @@
-JD-Logistics-Scheduling-GOC
+Results Feasibility Test （JD-Logistics-Scheduling-GOC ）
 =======================================
-城市物流运输车辆智能调度
+城市物流运输车辆智能调度 可行性检测程序
 ---------------------------------------
 Author:YXP
 
