@@ -1,0 +1,52 @@
+# Project: JD_
+# Makefile created by Dev-C++ 5.10
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = main.o check_count.o Choose_Car_Type£¨new£©.o Dta_Solve.o find_route.o optimization.o read_dis_tm.o read_node.o solution_write.o
+LINKOBJ  = main.o check_count.o Choose_Car_Type£¨new£©.o Dta_Solve.o find_route.o optimization.o read_dis_tm.o read_node.o solution_write.o
+LIBS     = -L"E:/Program Files (x86)/Dev C++/Dev-Cpp/MinGW64/lib" -L"E:/Program Files (x86)/Dev C++/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+INCS     = -I"E:/Program Files (x86)/Dev C++/Dev-Cpp/MinGW64/include" -I"E:/Program Files (x86)/Dev C++/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"E:/Program Files (x86)/Dev C++/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include"
+CXXINCS  = -I"E:/Program Files (x86)/Dev C++/Dev-Cpp/MinGW64/include" -I"E:/Program Files (x86)/Dev C++/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"E:/Program Files (x86)/Dev C++/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include" -I"E:/Program Files (x86)/Dev C++/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include/c++"
+BIN      = JD_.exe
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+check_count.o: check_count.c
+	$(CC) -c check_count.c -o check_count.o $(CFLAGS)
+
+Choose_Car_Type£¨new£©.o: Choose_Car_Type£¨new£©.c
+	$(CC) -c Choose_Car_Type£¨new£©.c -o Choose_Car_Type£¨new£©.o $(CFLAGS)
+
+Dta_Solve.o: Dta_Solve.c
+	$(CC) -c Dta_Solve.c -o Dta_Solve.o $(CFLAGS)
+
+find_route.o: find_route.c
+	$(CC) -c find_route.c -o find_route.o $(CFLAGS)
+
+optimization.o: optimization.c
+	$(CC) -c optimization.c -o optimization.o $(CFLAGS)
+
+read_dis_tm.o: read_dis_tm.c
+	$(CC) -c read_dis_tm.c -o read_dis_tm.o $(CFLAGS)
+
+read_node.o: read_node.c
+	$(CC) -c read_node.c -o read_node.o $(CFLAGS)
+
+solution_write.o: solution_write.c
+	$(CC) -c solution_write.c -o solution_write.o $(CFLAGS)
