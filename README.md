@@ -20,7 +20,7 @@ CONTENT
 
 OVERVIEW
 ---------------------------------------
-赛题官网
+赛题官网（A/B题）
 
 [JDATA](https://jdata.jd.com/index.html)----[GOC 城市物流运输车辆智能调度](https://jdata.jd.com/html/detail.html?id=5)
 
