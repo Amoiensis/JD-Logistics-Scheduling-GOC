@@ -156,6 +156,24 @@ B榜
 
 
 
+### Citation [引用]
+
+如果本项目帮助到了您的研究，或者使用了本项目提供的数据，可以引用本项目，非常感谢！
+
+```
+@misc{Xiping2018,
+  author = {Xiping.Yu},
+  title = {JD-Logistics-Scheduling-GOC},
+  year = {2018},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/Amoiensis/JD-Logistics-Scheduling-GOC}},
+  commit = {}
+}
+```
+
+
+
 ### Attention [注意]
 
 未经允许，请勿转载！本项目所有文件仅供学术研究使用！
