@@ -2,7 +2,7 @@
 
 ## JD Logistics Scheduling (GOC)
 
-![Data_Visual_Promblem_B](./Picture/Amoiensis_Scheduling_long.png)
+![Amoiensis_Logo](./Picture/Amoiensis_Scheduling_long.png)
 
 Author: Xiping.Yu
 
