@@ -1,0 +1,49 @@
+
+[数据说明]
+2024.07.04, [Xiping.Yu](mailto:amoiensis@outlook.com)
+
+- 概述
+因原赛题网站 [JDATA-GOC 城市物流运输车辆智能调度](https://jdata.jd.com/html/detail.html?id=5)已关闭。
+为便于 VRP 的学术研究，同时为保护隐私，提供去除坐标点经纬度的数据，具体见“数据说明”。
+[Note.]
+1. 如有需要带经纬度数据的数据, 请叙述研究使用原因等, 邮件联系 [Xiping.Yu](mailto:Amoiensis@outlook.com).
+2. 若为研究 HSODM(Homogeneous Second-Order Descent Method ) 的相关, 也可联系我们.
+
+
+- 赛题规模
+	- A榜: 送货+可充电+循环取货(单仓)
+	- B榜: 取货/送货+可充电+循环取货(单仓)
+	[Note]. A 即A榜只考虑Receiver_Node(待配送点), 不考虑 Sender_Node (待取货点).
+  | ID_data_set | All_Node_Num |  Receiver_Node | Sender_Node | Charger_Node |
+  | ----------- | ------------ | -------------- | ----------- | ------------ |
+  | 5           | 1200         | 900            | 200         | 100          |
+  | 4           | 1300         | 1000           | 200         | 100          |
+  | 3           | 1400         | 1100           | 200         | 100          |
+  | 2           | 1500         | 1200           | 200         | 100          |
+  | 1           | 1600         | 1300           | 200         | 100          |
+
+- 节点类型说明
+	Node-type:{
+		"Warehouse": 1,
+		"Receiver": 2,
+		"Sender": 3,
+		"Charger": 4,
+	}
+
+ - 车型说明
+| vehicle_type_ID       | vehicle_type_name    | max_volume               | max_weight               | max _vehicle_cnt | driving_range | charge_tm | unit_trans_cost    | vehicle_cost    |
+| --------------------- | -------------------- | ------------------------ | ------------------------ | ---------------- | ------------- | --------- | ------------------ | --------------- |
+| 1                     | IVECO                | 12                       | 2                        | 500              | 100000        | 0.5       | 12                 | 200             |
+| 2                     | TRUCK                | 16                       | 2.5                      | 500              | 120000        | 0.5       | 14                 | 300             |
+
+| col_name                 | comment             |
+| ------------------------ | ------------------- |
+| vehicle_type_ID          | 主键,车型编号 |
+| vehicle_type_name        | 车型名称        |
+| max_volume               | 最高装载容积(m³) |
+| max_weight               | 核定载重(t)     |
+| max_vehicle_cnt          | 最大车辆数量(台) |
+| driving_range            | 持续里程(m)     |
+| charge_tm                | 充电时间(h)     |
+| unit_trans_cost          | 每公里运输成本(元) |
+| vehicle_cost             | 车辆使用成本(元/天) |
